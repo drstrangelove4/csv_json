@@ -42,7 +42,7 @@ def print_data(weather_data):
     time = 0
     if weather_data:
 
-        # Loops over data and pulls out a English readable forecase from the large amount of data.
+        # Loops over data and pulls out a English readable forecast from the large amount of data.
         for hour in weather_data["forecast"]["forecastday"][0]["hour"]:
             weather_condition = hour["condition"]["text"]
             if time != 0:
